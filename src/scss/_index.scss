@@ -21,17 +21,6 @@ code {
 }
 
 .bgstyle {
-  /* background: linear-gradient(136deg, #1ad7c0, #8E44AD, #ff9b11, #1F3A93, #ddd8c6, #000000, #000000);  */
-  /*background: linear-gradient(
-    136deg,
-    #4484ce,
-    #1ad7c0,
-    #ff9b11,
-    #9b59b6,
-    #ff7f7f,
-    #ecf0f1
-  );*/
-
   background-size: 1200% 1200%;
   -webkit-animation: BackgroundAnimation 70s ease infinite;
   -moz-animation: BackgroundAnimation 70s ease infinite;
@@ -128,4 +117,37 @@ code {
   & > * {
     animation: progress 1.5s ease-in-out forwards;
   }
+}
+
+.projectCard-bone {
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+  width: 20%;
+  margin: 5rem auto;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.project1,
+.project2,
+.project3 {
+  background-size: cover;
+  &:hover {
+    .projectCard-bone {
+      transition: 0.5s ease-in-out;
+      background-color: #6c757d;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
+.project1 {
+  background-image: url("../assets/img/octane.png");
+}
+.project2 {
+  background-image: url("../assets/img/changeHealth.png");
+}
+.project3 {
+  background-image: url("../assets/img/nyse.png");
 }
